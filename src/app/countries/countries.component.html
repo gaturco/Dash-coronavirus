@@ -1,0 +1,15 @@
+<!-- <ul class="heroes">
+    <li *ngFor="let country of countries; let num = index">
+        <a routerLink="/detail/{{country}}">
+            <span class="badge">{{num + 1}}</span> {{country}}
+        </a>
+    </li>
+</ul> -->
+
+<div class="grid grid-pad">
+    <a *ngFor="let country of countries" class="col-1-4" routerLink="/detail/{{country}}">
+        <div class="module hero">
+            <h4>{{country}}</h4>
+        </div>
+    </a>
+</div>

@@ -1,0 +1,16 @@
+<div *ngIf="country">
+    <h2>{{country.country | uppercase}}</h2>
+    <div>
+        <label>cases: {{country.confirmed}}</label>
+    </div>
+    <div>
+        <label>deaths: {{country.deaths}}</label>
+    </div>
+    <div>
+        <label>recovered: {{country.recovered}}</label>
+    </div>
+    <div>
+        <label>last update: {{country.lastUpdate | date: 'dd/MM/yyyy HH:MM:ss'}}</label>
+    </div>
+    <button (click)="goBack()">go back</button>
+</div>
